@@ -51,7 +51,7 @@ public class StudentAndCourseController {
 	public String showAddStudentForm(@ModelAttribute("stud") Student stud) {
 		
 		//return LVN
-		return "add_employee";
+		return "add_student";
 	}
 
 	@PostMapping("/insert_employee")
@@ -123,7 +123,7 @@ public class StudentAndCourseController {
 	@GetMapping("/insert_course")
 	public String showAddCourseForm(@ModelAttribute("cour") Course cour) {		
 		//return LVN
-		return "add_student";
+		return "add_course";
 	}
 
 	@PostMapping("/insert_course")

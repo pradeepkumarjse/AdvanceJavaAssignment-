@@ -13,8 +13,10 @@ import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.springframework.lang.NonNull;
+
 import lombok.Getter;
-import lombok.NonNull;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
@@ -23,6 +25,7 @@ import lombok.ToString;
 @Setter
 @ToString
 @RequiredArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name="student")
 public class Student implements Serializable {

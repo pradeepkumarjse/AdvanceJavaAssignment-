@@ -1,9 +1,9 @@
 package com.shivit.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
 import com.shivit.model.Course;
 
-public interface ICourseRepo extends JpaRepository<Course, Integer> {
+public interface ICourseRepo extends PagingAndSortingRepository<Course, Integer> {
 
 }

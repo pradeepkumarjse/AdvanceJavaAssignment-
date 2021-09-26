@@ -19,15 +19,15 @@
 					<th>Students</th>
 					
 				</tr>
-				<c:forEach var="stud" items="${courList}">
+				<c:forEach var="cour" items="${courList}">
 					<tr>
 						<td>${cour.courseId}</td>
 						<td>${cour.courseName}</td>
 						<td>${cour.students}</td>
 						
-						<td><a href="edit_course?sno=${cour.courseId}"><img
+						<td><a href="edit_course?cno=${cour.courseId}"><img
 								src="images/edit1.png" height="50" width="50" />&nbsp;&nbsp;</a> <a
-							href="delete_course?sno=${cour.courseId}"
+							href="delete_course?cno=${cour.courseId}"
 							onclick="confirm('Do u want to delete')"><img
 								src="images/delete1.jpg" height="50" width="50" /></a></td>
 					</tr>
@@ -46,7 +46,7 @@
 
 	<br>
 	<h1 style="text-align: center">
-		<a href="insert_student">add Course<img src="images/add.jpg" height="100" width="100"/></a>
+		<a href="insert_course">add Course<img src="images/add.jpg" height="100" width="100"/></a>
 	</h1>
 	<br>
 	<br>

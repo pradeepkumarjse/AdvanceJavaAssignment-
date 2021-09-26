@@ -16,11 +16,11 @@
 	<table border="0" bgcolor="cyan" align="center">
 		<tr>
 			<td>Student name::</td>
-			<td><form:input path="sname" /></td>
+			<td><form:input path="studentName" /></td>
 		</tr>
 		<tr>
 			<td>Course ::</td>
-			<td><form:input path="courseName" /></td>
+			<td><form:input path="courses" /></td>
 		</tr>
 
 

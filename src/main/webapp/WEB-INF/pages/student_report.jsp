@@ -16,8 +16,7 @@
 				<tr bgcolor="pink">
 					<th>StudentId</th>
 					<th>StudentName</th>
-					<th>Courses</th>
-					
+					<th>Courses</th>					
 				</tr>
 				<c:forEach var="stud" items="${studsList}">
 					<tr>
@@ -28,8 +27,8 @@
 						<td><a href="edit_student?sno=${stud.studentId}"><img
 								src="images/edit1.png" height="50" width="50" />&nbsp;&nbsp;</a> <a
 							href="delete_student?sno=${stud.studentId}"
-							onclick="confirm('Do u want to delete')"><img
-								src="images/delete1.jpg" height="50" width="50" /></a></td>
+							onclick="confirm('Do u want to delete')">
+							<img src="images/delete1.jpg" height="50" width="50" /></a></td>
 					</tr>
 				</c:forEach>
 			</table>
@@ -43,17 +42,14 @@
 	<blink>
 		<h1 style="color: green;text-align=center;">${resultMsg}</h1>
 	</blink>
-
 	<br>
 	<h1 style="text-align: center">
 		<a href="insert_student">add Student<img src="images/add.jpg" height="100" width="100"/></a>
 	</h1>
 	<br>
 	<br>
-
 	<h1 style="text-align: center">
 		<a href="./">Home<img src="images/home1.png" height="100" width="100"/></a>
 	</h1>
-
 </body>
 </html>
